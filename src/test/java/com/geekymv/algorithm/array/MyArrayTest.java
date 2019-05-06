@@ -14,4 +14,17 @@ public class MyArrayTest {
 
         array.print();
     }
+
+    @Test
+    public void testRemove() {
+        MyArray array = new MyArray(3);
+        array.add(1);
+        array.add(2);
+        array.add(3);
+        array.print();
+
+        int value = array.remove(2);
+        System.out.println("移除的元素 value = " + value);
+        array.print();
+    }
 }
