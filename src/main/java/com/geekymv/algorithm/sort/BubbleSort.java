@@ -19,7 +19,7 @@ public class BubbleSort {
             boolean flag = false;
             for(int j = 0; j < len - i - 1; j++) {
                 if(arr[j] > arr[j+1]) {
-                    swap(arr, j, j+1);
+                    Util.swap(arr, j, j+1);
                     flag = true;
                 }
             }
@@ -33,10 +33,6 @@ public class BubbleSort {
 
     }
 
-    public void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
+
 
 }
