@@ -1,4 +1,4 @@
-package com.geekymv.algorithm.array;
+package com.geekymv.algorithm.sort;
 
 import com.geekymv.algorithm.sort.BubbleSort;
 import org.junit.Test;
