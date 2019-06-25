@@ -1,6 +1,5 @@
 package com.geekymv.algorithm.sort;
 
-import com.geekymv.algorithm.sort.BubbleSort;
 import org.junit.Test;
 
 public class BubbleSortTest {

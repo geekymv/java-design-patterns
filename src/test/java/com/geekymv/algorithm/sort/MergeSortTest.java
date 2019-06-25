@@ -1,7 +1,6 @@
 package com.geekymv.algorithm.sort;
 
 import com.geekymv.algorithm.Util;
-import com.geekymv.algorithm.sort.MergeSort;
 import org.junit.Test;
 
 public class MergeSortTest {
