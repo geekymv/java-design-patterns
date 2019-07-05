@@ -30,4 +30,28 @@ public class UsingIntrinsicLocks {
         // 使用 synchronized，总是输出 true, false, true, false...
     }
 
+    /**
+     * synchronized 代码块
+     * 尽可能在一个方法内部代码块中加锁
+     */
+    public void mySynchronizedBlock() {
+        System.out.println("Who owns my lock: " + Thread.currentThread().getName());
+        synchronized (this) {
+            state = !state;
+            System.out.println("Who owns my lock after state changes: " + Thread.currentThread().getName());
+            System.out.println("State is: " + state);
+            System.out.println("-------------------------------------");
+        }
+    }
+
+    /**
+     * 可重入锁
+     */
+    public synchronized void reentrancy() {
+        System.out.println("Before acquiring again");
+
+        synchronized (this) {
+            System.out.println("I'm own it! " + Thread.currentThread().getName());
+        }
+    }
 }
