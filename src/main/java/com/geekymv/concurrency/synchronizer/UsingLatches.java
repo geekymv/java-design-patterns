@@ -27,11 +27,11 @@ public class UsingLatches {
                 TimeUnit.MILLISECONDS.sleep(new Random().nextInt(10) * 100);
                 System.out.println("任务执行完成 " + Thread.currentThread().getName());
 
-                // 任务执行完成，count减1
-                latch.countDown();
-
             } catch (InterruptedException e) {
                 e.printStackTrace();
+            } finally {
+                // 任务执行完成，count减1
+                latch.countDown();
             }
         };
 
