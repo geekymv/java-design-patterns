@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 可以实现让一组线程等待至某个状态之后，再全部同时执行。
+ * 一般用于一组线程相互等待至某个状态，然后这一组线程再同时执行。
  */
 public class UsingBarriers {
 
