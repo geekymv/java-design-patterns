@@ -29,6 +29,7 @@ public class UsingBarriers {
                 // 大家在这集合
                 barrier.await();
 
+                // 模拟任务执行耗费时间至多1s
                 TimeUnit.MILLISECONDS.sleep(new Random().nextInt(10) * 100);
                 System.out.println("任务执行完成 " + Thread.currentThread().getName());
 
