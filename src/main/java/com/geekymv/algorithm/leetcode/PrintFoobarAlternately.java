@@ -37,7 +37,7 @@ public class PrintFoobarAlternately {
         });
 
         t2.start();
-//        t1.start();
+        t1.start();
 
     }
 
@@ -47,13 +47,13 @@ public class PrintFoobarAlternately {
 class FooBar {
     private int n;
 
-    ReentrantLock lock = new ReentrantLock();
+    private ReentrantLock lock = new ReentrantLock();
 
-    Condition fooCondition = lock.newCondition();
+    private Condition fooCondition = lock.newCondition();
 
-    Condition barCondition = lock.newCondition();
+    private Condition barCondition = lock.newCondition();
 
-    boolean foo = false;
+    private volatile boolean foo = false;
 
     public FooBar(int n) {
         this.n = n;
