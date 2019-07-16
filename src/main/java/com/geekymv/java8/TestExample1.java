@@ -24,10 +24,10 @@ public class TestExample1 {
                                     .filter(x -> "a".equals(x.toString()));
         stream.forEach(System.out::println);
         */
-
-        Arrays.stream(data).flatMap(x-> Arrays.stream(x))
-                .filter(x-> "a".equals(x.toString()))
-                .forEach(System.out::println);
+        Arrays.stream(data)
+            .flatMap(x-> Arrays.stream(x))
+            .filter(x-> "a".equals(x.toString()))
+            .forEach(System.out::println);
 
     }
 }
