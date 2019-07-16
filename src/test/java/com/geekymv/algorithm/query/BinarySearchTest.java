@@ -10,7 +10,7 @@ public class BinarySearchTest {
 
         int[] arr = {1, 3, 5, 6, 9, 10, 14, 22};
 
-        int index = search.search(arr, 14);
+        int index = search.searchByRecursive(arr, 14);
         System.out.println(index);
     }
 }
