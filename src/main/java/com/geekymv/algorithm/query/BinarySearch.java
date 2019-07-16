@@ -1,7 +1,13 @@
 package com.geekymv.algorithm.query;
 
 /**
- * 针对是是一个有序集合
+ * 二分查找类似分治思想
+ *
+ * 使用条件
+ * 1.顺序表，即数组
+ * 2.有序数据
+ *
+ * 时间复杂度O(logn)
  */
 public class BinarySearch {
 
@@ -9,15 +15,15 @@ public class BinarySearch {
         int low = 0;
         int high = arr.length - 1;
 
-        while (low <= high) {
-//            int mid = (low + high) / 2;
-            int mid = low + ((high - low) / 2);
+        while (low <= high) { // 循环退出条件
+//            int mid = (low + high) / 2; // low+high 有可能会溢出
+            int mid = low + ((high - low) / 2); // mid 取值
             if(arr[mid] == value) {
                 return mid;
             }else if(arr[mid] > value) {
-                high = mid - 1;
+                high = mid - 1; // 更新high
             }else {
-                low = mid + 1;
+                low = mid + 1; // 更新low
             }
         }
         return -1;
