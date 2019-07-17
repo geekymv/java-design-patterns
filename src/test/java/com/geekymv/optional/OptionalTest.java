@@ -6,6 +6,7 @@ import java.util.Optional;
 
 /**
  * Optional 无法序列化
+ * @see <a href="https://mp.weixin.qq.com/s/iPr1VAbw4sDAHTppebNEYQ"></a>
  */
 public class OptionalTest {
 
