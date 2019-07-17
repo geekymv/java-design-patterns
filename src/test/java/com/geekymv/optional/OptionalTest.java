@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Optional;
 
 /**
- * Optional 无法序列化
+ * Optional 使用示例
  * @see <a href="https://mp.weixin.qq.com/s/iPr1VAbw4sDAHTppebNEYQ"></a>
  */
 public class OptionalTest {
