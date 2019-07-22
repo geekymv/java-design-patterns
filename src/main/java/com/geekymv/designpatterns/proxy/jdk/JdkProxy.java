@@ -4,6 +4,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * JDK 提供的动态代理必须提供接口
+ */
 public class JdkProxy implements InvocationHandler {
 
     private Object realObject;
