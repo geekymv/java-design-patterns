@@ -1,7 +1,5 @@
 package com.geekymv.algorithm.leetcode;
 
-import java.io.Serializable;
-
 /**
  * https://leetcode.com/problems/add-two-numbers/
  */
@@ -36,7 +34,7 @@ public class AddTwoNumbers {
 
 }
 
-class ListNode implements Serializable {
+class ListNode {
     int val;
     ListNode next;
 
