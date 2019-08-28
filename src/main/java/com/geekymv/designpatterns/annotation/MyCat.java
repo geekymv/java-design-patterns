@@ -2,7 +2,7 @@ package com.geekymv.designpatterns.annotation;
 
 public class MyCat {
 
-    @MyTest(NullPointerException.class)
+    @MyTest(IndexOutOfBoundsException.class)
     public void testA() {
         int[] arr = new int[1];
         int i = arr[2];

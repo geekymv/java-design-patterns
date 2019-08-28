@@ -2,6 +2,7 @@ package com.geekymv.designpatterns.annotation;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 public class MyTestMain {
 
@@ -15,6 +16,12 @@ public class MyTestMain {
             for(Method m : methods) {
                 if(m.isAnnotationPresent(MyTest.class)) {
                     try {
+                        // 判断方法是否是public的
+                        boolean isPublic = Modifier.isPublic(m.getModifiers());
+                        if(!isPublic) {
+                            System.out.println(m.getName() + "方法应该是public的");
+                            return;
+                        }
                         m.invoke(o);
 
                     } catch (IllegalAccessException e) {
