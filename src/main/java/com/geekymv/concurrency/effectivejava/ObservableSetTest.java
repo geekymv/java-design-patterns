@@ -24,7 +24,7 @@ public class ObservableSetTest {
                             System.out.println("线程2 = " + Thread.currentThread().getName());
                             boolean b = set.removeObserver(observer);
                             System.out.println("删除结果 = " + b);
-                        });//.get(); // get 方法 等待计算结果
+                        }).get(); // get 方法 等待计算结果
 
                     } catch (Exception ex) {
                         ex.printStackTrace();
