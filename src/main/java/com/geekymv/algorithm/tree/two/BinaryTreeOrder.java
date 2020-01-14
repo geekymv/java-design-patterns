@@ -9,7 +9,7 @@ package com.geekymv.algorithm.tree.two;
  *  前序遍历、中序遍历、后序遍历
  *  表示节点与它的左右子节点遍历打印的先后顺序
  */
-public class TwoTreeOrder {
+public class BinaryTreeOrder {
 
     private Node<Integer> init() {
         Node<Integer> three1 = new Node<>();
@@ -71,7 +71,7 @@ public class TwoTreeOrder {
     }
 
     public static void main(String[] args) {
-        TwoTreeOrder preOrder = new TwoTreeOrder();
+        BinaryTreeOrder preOrder = new BinaryTreeOrder();
         Node<Integer> root = preOrder.init();
 
         System.out.println("前序遍历");
