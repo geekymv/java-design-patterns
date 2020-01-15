@@ -44,6 +44,8 @@ public class QuickSort {
                 i = i + 1;
             }
         }
+
+        // 将pivot 放在中间
         Util.swap(arr, i, r);
         return i;
     }
