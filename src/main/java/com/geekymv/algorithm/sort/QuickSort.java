@@ -3,9 +3,9 @@ package com.geekymv.algorithm.sort;
 import com.geekymv.algorithm.Util;
 
 /**
- * 排序数组中下标从p到r之间的一组数据，
- * 选择p到r 之间的任意一个数据作为pivot（分区点）。
+ * 快排时间复杂度O(nlogn)
  *
+ * 排序数组中下标从p到r之间的一组数据，选择p到r 之间的任意一个数据作为pivot（分区点）。
  * 遍历p到r 之间的数据，将小于pivot 的放到左边，将大于pivot 放到右边，将pivot 放到中间。
  */
 public class QuickSort {
